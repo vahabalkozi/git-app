@@ -2,13 +2,13 @@ const baseURL='https://api.github.com/users/';
 
 //select DOM Element
 const pageLocation=window.location.href.split('=')[1];
-const information=document.querySelector('.user-information')
+const information=document.querySelector('.user-information');
 const userPhoto=document.querySelector('.user-photo');
 const userInformation=document.querySelector('.information');
 const loading=document.querySelector('.loading');
 const hireable=document.querySelector('.hireable');
 const userFollowing=document.querySelector('.followers-box');
-const userProjectBox=document.querySelector('.project')
+const userProjectBox=document.querySelector('.project');
 
 //get users
 const getUser= async ()=>{
@@ -57,7 +57,7 @@ const generateUserListHtml=(user)=>{
     userFollowing.innerHTML=`<span>Followers:${user.followers}</span><span>Following:${user.following
     }</span><span>Public Repos:${user.public_repos
     }</span><span>Poblic Gists:${user.public_gists}</span>`
-}
+};
 
 //generat user git project
 const generateUserProject=(projects)=>{
@@ -66,7 +66,8 @@ const generateUserProject=(projects)=>{
         projectBox.innerHTML=`<a href="${project.clone_url}">${project.name}</a>`;
         userProjectBox.appendChild(projectBox);
     }
-}
+};
+
 
 getUser();
 getUserProject();
