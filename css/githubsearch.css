@@ -1,0 +1,360 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+ul,
+li {
+  list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* about page */
+.countainer{
+    max-width: 1000px;
+    margin:0 auto;
+    padding: 0;
+}
+.about-title{
+    padding: 0 70px;
+    padding-top: 30px;
+
+}
+.about-title p{
+    color: #333;
+    margin-top: 5px;
+}
+/* github page */
+
+/* header */
+#header {
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #dc3546ee;
+}
+.logo {
+  font-size: 25px;
+  font-weight: 600;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .logo,
+header .menu a {
+  color: white;
+}
+header ul li {
+  margin: 0 10px;
+}
+
+/* alert box */
+.alert {
+  display: flex;
+  align-items: center;
+  padding: 11px;
+  background-color: #d9d9d955;
+  text-align: center;
+  margin-top: 30px;
+  display: none;
+}
+.alert i {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  color: white;
+  background-color: #333;
+}
+.alert span {
+  color: #7e7777;
+}
+
+/* form */
+form {
+  padding: 30px 0;
+}
+form input {
+  width: 100%;
+  height: 35px;
+  display: block;
+  margin: 0 auto;
+  padding: 9px;
+  font-size: 18px;
+}
+form input::placeholder{
+    color: #6a6969;
+    font-size: 18px;
+}
+.search-btn{
+    width: 100%;
+    height: 35px;
+    display: block;
+    margin: 0 auto;
+    padding: 11px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.search-btn:hover{
+    background-color: hsla(0, 0%, 20%, 0.876);
+}
+.clear-btn{
+    width: 100%;
+    height: 35px;
+    display: block;
+    margin: 0 auto;
+    padding: 11px;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f4f4f4;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    display: none;
+}
+.clear-btn:hover{
+    color:#545252 ;
+}
+
+/* users list */
+.users > h3 {
+  text-align: center;
+  padding: 20px;
+}
+.users {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 35px;
+}
+.users > li {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #d9d9d9;
+  padding: 15px;
+  border-radius: 3px;
+}
+.users li img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  margin: 10px 0px;
+}
+
+.users li a {
+  padding: 7px 15px;
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  margin-top: 15px;
+  transition: 0.3s;
+}
+.users li a:hover{
+  background-color: #333333bb;
+
+}
+
+/* single page  */
+.back-button{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.back-button a{
+    padding: 12px 20px;
+    color: #333;
+    background-color: #f4f4f4;
+    transition: 0.3s;
+    margin-right: 10px;
+}
+.back-button a:hover{
+    color: #6b6969;
+}
+.times::before{
+  content: '\0274c';
+  color: red;
+  font-size: 12px;
+}
+.checkmark{
+  display: inline-block;
+  width: 8px;
+  height: 15px;
+  border: 3.5px solid green;
+  border-left: none;
+  border-top: none;
+  transform: rotate(45deg);
+  margin-left: 5px;
+}
+.user-information{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    border: 1px solid #dad3d3;
+    margin: 10px 0;
+    padding: 10px 0px;
+    display: none;
+    color: #333;
+}
+.user-information span{
+  display: inline-block;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.information{
+  margin-top: 15px;
+}
+.information a{
+  display: inline-block;
+  color: white;
+  background-color: #333;
+  padding: 10px 27px;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+.information a:hover{
+  background-color: #333333a1;
+}
+.information p:nth-child(4){
+  margin: 17px 0;
+}
+.user-photo{
+    margin: 10px 0px;
+    margin-left: 40px;
+    text-align: center;
+}
+.user-photo img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.user-photo p{
+    margin-top: 5px;
+}
+.followers-box{
+  width: 100%;
+  border: 1px solid #dad3d3;
+  margin-top: 15px;
+  padding: 30px 70px;
+  display: none;
+  text-align: center;
+}
+.followers-box span{
+  padding: 5px 12px;
+  margin-right: 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+}
+.followers-box span:nth-child(1){
+  background-color: #dc3546ee;
+}
+.followers-box span:nth-child(2){
+  color: #333;
+  border: 0.5px solid #aca7a7;
+}
+.followers-box span:nth-child(3){
+  background-color: #28a745;
+}
+.followers-box span:nth-child(4){
+  background-color: #333;
+}
+.project div{
+  margin: 10px 0;
+  padding: 20px 0;
+  padding-left: 10px;
+  border: 1px solid #dad3d3;
+}
+.project div a{
+  color: red;
+  font-weight: bold;
+}
+/* loader */
+.loading{
+ margin-top: 30px;
+ text-align: center;
+ display: none;
+}
+.loading i{
+   color: #333;
+   font-size: 30px;
+  }
+
+/* responsive */
+@media screen and (max-width: 768px) {
+  form input,.search-btn,.clear-btn{
+    width: 90%;
+  }
+  .users{
+    padding: 0 15px;
+    grid-gap: 20px;
+  }
+  .followers-box,.user-information{
+    width: 98%;
+  }
+  .back-button,.user-information,.followers-box,.project{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+}
+
+@media screen and (max-width:426px) {
+  #header{
+    display: block;
+  }
+  .logo{
+    margin-bottom: 15px;
+  }
+  .users{
+    grid-template-columns:1fr;
+  }
+  .user-information{
+    grid-template-columns:1fr;
+    width: 90%;
+    margin-left: 20px;
+  }
+  .information{
+    padding-left: 15px;
+  }
+  .followers-box{
+    width: 90%;
+    margin-left: 20px;
+  }
+  .followers-box span {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  .project{
+    margin: 20px;
+  }
+}

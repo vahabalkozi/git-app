@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github Search</title>
+    <link rel="stylesheet" href="./css/githubsearch.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="./images/192px-Github-desktop-logo-symbol.svg.png">
+  </head>
+  <body>
+    <header id="header">
+        <div class="logo">
+            <i class="fa fa-github"></i>
+            <a href="" class="logo">Github Search</a>
+        </div>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </header>
+    <main>
+      <div class="countainer">
+        <div class="alert">
+            <i>!</i> <span>Please Enter Something</span>
+          </div>
+          <form action="">
+            <input class="search" type="search" placeholder="Search Users..." />
+            <button class="search-btn">Submit</button>
+            <button class="clear-btn">clear</button>
+            <div class="loading">
+              <i class="fa fa-spinner fa-spin"></i>
+            </div>
+          </form>
+          <div class="users"></div>
+      </div>
+    </main>
+    <script src="./js/githubSearch.js"></script>
+  </body>
+</html>
